@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <link rel="stylesheet" href="ServicesStyle.css">
+    <title>Services</title>
+</head>
+<body>
+  
+      <body>
+
+        <div class="main">
+            <div class="navbar">
+                <div class="icon">
+                    <img src="Images/IMG-20241120-WA0008.jpg" class="Logo"></img>
+                </div>
+        
+                <div class="menu">
+                    <ul>
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        <header>
+          <h1>Avant Garde Landscaping</h1>
+          <p>Crafting Elegance, One Landscape at a Time</p>
+        </header>
+      
+        <main>
+          <section class="services">
+            <div class="service-card" id="lawn-care">
+              <h2>Lawn Care</h2>
+              <p>Maintain your lush, green lawn with expert care and attention.</p>
+            </div>
+            <div class="service-card" id="garden-design">
+              <h2>Garden Design</h2>
+              <p>Transform your outdoor space with garden designs.</p>
+            </div>
+            <div class="service-card" id="hardscaping">
+              <h2>Hardscaping</h2>
+              <p>Enhance your property with patios, pathways, and stonework.</p>
+            </div>
+            <div class="service-card" id="irrigation">
+              <h2>Irrigation</h2>
+              <p>Efficient irrigation systems to keep your garden thriving.</p>
+            </div>
+          </section>
+      
+          <section class="calculator">
+            <h2>Service Price Calculator</h2>
+            <form id="price-calculator">
+              <label for="service">Choose a Service:</label>
+              <select id="service">
+                <option value="lawn-care" data-price="500">Lawn Care (R500/hour)</option>
+                <option value="garden-design" data-price="750">Garden Design (R750/hour)</option>
+                <option value="hardscaping" data-price="1000">Hardscaping (R1000/hour)</option>
+                <option value="irrigation" data-price="600">Irrigation (R600/hour)</option>
+              </select>
+              <label for="hours">Hours Needed:</label>
+              <input type="number" id="hours" min="1" placeholder="Enter hours">
+              <button type="button" id="calculate">Calculate Price</button>
+            </form>
+            <p id="result">Total Price: R0</p>
+          </section>
+        </main>
+      
+        <footer>
+          <p>&copy; 2024 Avant Garde Landscaping. All Rights Reserved.</p>
+          <p>Contact us: AvantGarde@gmail.com</p>
+        </footer>
+      
+        <script src="Script.js"></script>
+</body>
+</html>
