@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About</title>
+</head>
+<link rel="stylesheet" href="AboutStyle.css">
+<body  class="fade">
+    <header class="header">
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <img src="Images/IMG-20241120-WA0008.jpg" alt="Company Logo">
+          </a>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="about-section">
+          <div class="about-header">
+            <h1>About Us</h1>
+            <p>Your trusted partner in landscaping and gardening services.</p>
+          </div>
+          
+          <!-- Our Mission -->
+          <div class="content-section">
+            <div class="text">
+              <h2>Our Mission</h2>
+              <p>We aim to transform outdoor spaces into beautiful, functional landscapes that bring joy and sustainability to your life.</p>
+            </div>
+            <div class="image">
+              <img src="Images/istockphoto-185568132-612x612.jpg" alt="Our Mission">
+            </div>
+          </div>
+    
+          <!-- Our Team -->
+          <div class="content-section reverse">
+            <div class="image">
+              <img src="Images/IMG-20241230-WA0011.jpg" alt="Our Team">
+            </div>
+            <div class="text">
+              <h2>Our team</h2>
+              <p>Our experienced team of professionals is passionate about designing and maintaining the perfect garden for you.</p>
+            </div>
+          </div>
+    
+          <!-- Why Choose Us -->
+          <div class="why-choose-us">
+            <h2>Why Choose Us</h2>
+            <div class="reasons">
+              <div class="reason-card">
+                <h3>Quality Services</h3>
+                <p>We take pride in delivering exceptional landscaping services with attention to detail.</p>
+              </div>
+              <div class="reason-card">
+                <h3>Affordable Pricing</h3>
+                <p>Get quality landscaping at prices that won’t break the bank.</p>
+              </div>
+              <div class="reason-card">
+                <h3>Experience</h3>
+                <p>With over 10 years of experience, our service delivery is trusted by many</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+     <footer>
+        <p>&copy; 2024 Avant Garde Landscaping Co. All rights reserved.</p>
+      </footer>
+     <script>
+        document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll(".content-section");
+
+  const handleScroll = () => {
+    sections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 50) {
+        section.classList.add("visible");
+      }
+    });
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  handleScroll(); // Trigger on page load
+});
+
+     </script>
+</body>
+</html>
